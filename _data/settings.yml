@@ -10,4 +10,4 @@ social:
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/jihochoiii'}
 
 contacts:
-- {name: 'Jiho Choi', title: 'Senior Undergraduate Student', department: 'Majoring in Electrical and Electronic Engineering', institution: 'Yonsei University', institution_address: '50 Yonsei-ro, Seodaemun-gu, Seoul', email: 'jihochoi {\at} yonsei {\dot} ac {\dot} kr', image: 'assets/img/contact.jpg'}
+- {name: 'Jiho Choi', title: 'Senior Undergraduate Student', department: 'Majoring in Electrical and Electronic Engineering', institution: 'Yonsei University', institution_address: '50 Yonsei-ro, Seodaemun-gu, Seoul', image: 'assets/img/contact.jpg'}
