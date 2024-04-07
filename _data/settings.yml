@@ -6,7 +6,6 @@ menu:
 - {name: 'contact', url: '/contact'}
 
 social:
-- {icon: 'mail', link: 'mailto:jihochoi@yonsei.ac.kr'}
 - {icon: 'github', link: 'https://github.com/jihochoiii'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/jihochoiii'}
 
