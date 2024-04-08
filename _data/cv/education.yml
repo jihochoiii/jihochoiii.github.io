@@ -1,8 +1,11 @@
 - title: 'B.S., Electrical and Electronic Engineering'
-  description: 'Yonsei University, Seoul, South Korea (Mar. 2020 - Present)'
+  institution: 'Yonsei University'
+  details: 'Seoul, South Korea (Mar. 2020 - Present)'
 
 - title: 'Undergraduate Exchange Student, Electrical Engineering'
-  description: 'University of California, Los Angeles (UCLA), Los Angeles, CA (Jan. 2023 - Jun. 2023)'
+  institution: 'University of California, Los Angeles'
+  details: 'Los Angeles, CA (Jan. 2023 - Jun. 2023)'
 
 - title: 'High School Diploma'
-  description: 'Gyeongnam Science High School, Jinju, South Korea (Mar. 2017 - Jan. 2020)'
+  institution: 'Gyeongnam Science High School'
+  details: 'Jinju, South Korea (Mar. 2017 - Jan. 2020)'
