@@ -12,14 +12,11 @@ layout: default
         <h4>Education</h4>
       </div>
       <div class="col-md-10">
-        <p style="line-height: 1.0;"><b>B.S., Electrical and Electronic Engineering</b></p>
-        <p style="line-height: 1.0;"><b>Yonsei University</b>, <em>Seoul, South Korea (Mar. 2020 - Present)</em></p>
-        <p style="line-height: 1.0;">&nbsp;</p>
-        <p style="line-height: 1.0;"><b>Undergraduate Exchange Student, Electrical Engineering</b></p>
-        <p style="line-height: 1.0;"><b>University of California, Los Angeles</b>, <em>Los Angeles, CA (Jan. 2023 - Jun. 2023)</em></p>
-        <p style="line-height: 1.0;">&nbsp;</p>
-        <p style="line-height: 1.0;"><b>High School Diploma</b></p>
-        <p style="line-height: 1.0;"><b>Gyeongnam Science High School</b>, <em>Jinju, South Korea (Mar. 2017 - Jan. 2020)</em></p>
+        {% for section in site.data.cv.education %}
+          <p style="line-height: 1.0;"><b>{{ section.title }}</b></p>
+          <p style="line-height: 1.0;"><b>{{ section.institution }}</b>, <em>{{ section.details }}</em></p>
+          <p style="line-height: 1.0;">&nbsp;</p>
+        {% endfor %}
       </div>
     </div>
   </div>
