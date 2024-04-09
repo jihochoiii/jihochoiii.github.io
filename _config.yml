@@ -2,4 +2,3 @@ url: "https://jihochoiii.github.io"
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Jiho Choi"
 description: ""
-permalink: "/blog/:folder/:title"
