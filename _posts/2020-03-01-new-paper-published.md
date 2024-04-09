@@ -3,7 +3,7 @@ layout: post
 title: "New Paper Published"
 recents: "y"
 folder: "New"
-permalink: "blog/new/:title"
+permalink: "/blog/new/:title"
 preview: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat quam vel augue sollicitudin mollis in quis lorem. Nunc congue risus id lorem accumsan malesuada. Quisque odio velit, faucibus ac urna id, tristique scelerisque elit. Morbi tempor interdum ligula, gravida sagittis purus aliquam non. Vivamus vulputate risus orci, eu dictum"
 ---
 
