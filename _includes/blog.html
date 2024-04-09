@@ -5,7 +5,8 @@
       <div class="col-md-12">
         {% for post in site.posts %}
           <h5><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</h5>
-          <p><small>{{ post.preview }} ...</small><br>&nbsp;</p>
+          <p><small>{{ post.preview }} ...</small>
+          <p>&nbsp;</p>
         {% endfor %}
       </div>
     </div>
