@@ -1,12 +1,21 @@
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Blog</h3>
-    <div class="row g-5 mb-5">
-      <div class="col-md-12">
+    {% if page.title == "Home" %}
+      <h3 class="fw-bold border-bottom pb-3 mb-5">Recent Posts</h3>
+      <div class="row g-5 mb-5">
         {% for post in site.posts %}
           <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
+          <p><small>{{ post.preview }}</small></p>
         {% endfor %}
       </div>
-    </div>
+    {% else %}
+      <h3 class="fw-bold border-bottom pb-3 mb-5">Posts</h3>
+      <div class="row g-5 mb-5">
+        {% for post in site.posts %}
+          <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
+          <p><small>{{ post.preview }}</small></p>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 </div>
