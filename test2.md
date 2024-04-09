@@ -1,4 +1,4 @@
 ---
 layout: page
-title: "Test2"
+title: "test"
 ---
