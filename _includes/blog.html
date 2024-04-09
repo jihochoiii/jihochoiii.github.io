@@ -4,14 +4,14 @@
       <h3 class="fw-bold border-bottom pb-3 mb-5">Recent Posts</h3>
       <div class="row g-5 mb-5">
         {% for post in site.posts %}
-          <p style="line-height: 1.5;"><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}<br><small>{{ post.preview }} ...</small></p>
+          <p style="line-height: 2.0;"><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}<br><small>{{ post.preview }} ...</small></p>
         {% endfor %}
       </div>
     {% else %}
       <h3 class="fw-bold border-bottom pb-3 mb-5">Posts</h3>
       <div class="row g-5 mb-5">
         {% for post in site.posts %}
-          <p style="line-height: 1.5;"><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}<br><small>{{ post.preview }} ...</small></p>
+          <p style="line-height: 2.0;"><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}<br><small>{{ post.preview }} ...</small></p>
         {% endfor %}
       </div>
     {% endif %}
