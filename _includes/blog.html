@@ -1,13 +1,29 @@
 <div class="row g-5 mb-5">
   <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Posts</h3>
-    <div class="row g-5 mb-4">
-      <div class="col-md-12">
-        {% for post in site.posts %}
-          <h5><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</h5>
-          <p><small>{{ post.preview }} ...</small><br>&nbsp;</p>
-        {% endfor %}
+    {% if page.title = "Home" %}
+      <h3 class="fw-bold border-bottom pb-3 mb-5">Recent Posts</h3>
+      <div class="row g-5 mb-4">
+        <div class="col-md-12">
+          i = 0;
+          {% for post in site.posts %}
+            {% if i < 2 %}
+              <h5><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</h5>
+              <p><small>{{ post.preview }} ...</small><br>&nbsp;</p>
+              i = i + 1;
+            {% endif %}
+          {% endfor %}
+        </div>
       </div>
-    </div>
+    {% else %}
+      <h3 class="fw-bold border-bottom pb-3 mb-5">Posts</h3>
+      <div class="row g-5 mb-4">
+        <div class="col-md-12">
+          {% for post in site.posts %}
+            <h5><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</h5>
+            <p><small>{{ post.preview }} ...</small><br>&nbsp;</p>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
   </div>
 </div>
