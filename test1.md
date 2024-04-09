@@ -1,4 +1,4 @@
 ---
-layout: test1
+layout: category
 title: "Test1"
 ---
