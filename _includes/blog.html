@@ -4,7 +4,7 @@
       <h3 class="fw-bold border-bottom pb-3 mb-5">Recent Posts</h3>
       <div class="row g-5 mb-5">
         {% for post in site.posts %}
-          <h6></h6>a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }} {{ post.preview }} ...</h6>
+          <h6><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }} {{ post.preview }} ...</h6>
           <p>{{ post.preview }} ...</p>
         {% endfor %}
       </div>
