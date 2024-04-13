@@ -18,6 +18,10 @@ body a {
 }
 
 .dropdown button {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+  border: none;
   cursor: pointer;
 }
 
