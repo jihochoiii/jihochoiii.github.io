@@ -12,3 +12,12 @@ body {
 body a {
   color: $linkColor
 }
+.dropdown button {
+  cursor: pointer;
+}
+
+.dropdown blog {
+  background: #000000;
+  color: #ffffff;
+  display: block;
+}
