@@ -8,8 +8,15 @@
     </a>
   </div>
   <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-    {% for item in site.data.settings.menu %}
+    <ul>
+      <li><a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}/blog">blog</a></li>
+      <li><a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}/projects">projects</a></li>
+      <li><a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}/publications">publications</a></li>
+      <li><a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}/cv">cv</a></li>
+      <li><a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}/contact">contact</a></li>
+    </ul>
+<!--     {% for item in site.data.settings.menu %}
       <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
-    {% endfor %}
+    {% endfor %} -->
   </nav>
 </header>
