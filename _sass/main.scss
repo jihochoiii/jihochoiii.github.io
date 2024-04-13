@@ -10,27 +10,42 @@ body {
 }
 
 body a {
-  color: $linkColor
-}
-
-.dropdown button {
-  background: $backgroundColor;
   color: $linkColor;
-  font-family: $bodyFont;
-  border: none;
-  cursor: pointer;
 }
 
-.dropdown a {
+ul {
+  list-style: none;
+  blackground: $backgroundColor;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
   display: block;
+  padding: 10px 10px;
+  color: $linkColor;
   text-decoration: none;
+  text-align: center;
 }
 
-.dropdown .menu {
-  display: none;
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: 100%
   position: absolute;
+  background: black;
+  z-index: 999;
+  display: none;
 }
 
-.dropdown:hover .menu {
+ul li a:hover {
+}
+
+ul li:hover ul.dropdown {
   display: block;
 }
