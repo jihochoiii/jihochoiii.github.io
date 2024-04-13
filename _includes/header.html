@@ -8,13 +8,14 @@
     </a>
   </div>
   <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-      <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}/blog">blog</a></li>
+      <a class="me-3 py-2 text-decoration-none button" href="{{ site.github.url }}/blog">blog</a>
+        <nav class "d-inline-flex mt-2 mt-md-0 ms-md-auto">
+          <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}/blog/new">new</a>
+          <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}/blog/test">test</a>
+        </nav>
       <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}/projects">projects</a></li>
       <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}/publications">publications</a></li>
       <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}/cv">cv</a></li>
       <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}/contact">contact</a></li>
-<!--     {% for item in site.data.settings.menu %}
-      <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
-    {% endfor %} -->
   </nav>
 </header>
