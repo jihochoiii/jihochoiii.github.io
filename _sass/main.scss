@@ -12,6 +12,11 @@ body {
 body a {
   color: $linkColor
 }
+
+.dropdown {
+  display: inline-block;
+}
+
 .dropdown button {
   cursor: pointer;
 }
