@@ -12,6 +12,15 @@ body {
 body a {
   color: $linkColor
 }
-.button {
+.dropdown button {
   cursor: pointer;
+}
+
+.dropdown .menu {
+  display: none;
+  position: absolute;
+}
+
+.dropdown:hover .menu {
+  display: block;
 }
