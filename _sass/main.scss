@@ -13,7 +13,7 @@ body a {
   color: $linkColor
 }
 
-.dropdown button {
+.dropdown .button {
   background: $backgroundColor;
   color: $linkColor;
   font-family: $bodyFont;
@@ -31,6 +31,6 @@ body a {
   position: absolute;
 }
 
-.dropdown:hover .menu {
+.dropdown .button:hover .menu {
   display: block;
 }
