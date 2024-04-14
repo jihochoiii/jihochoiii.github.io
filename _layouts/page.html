@@ -6,16 +6,16 @@ layout: default
 
 <div class="row g-5 mb-5">
   <div>
-      <h3 class="fw-bold border-bottom pb-3 mb-5">&#x1F4C2; {{ page.title }}</h3>
-      <div class="row g-5 mb-4">
-        <div class="col-md-12">
-          {% for post in site.posts %}
-            {% if page.title == post.folder %}
-              <h5><a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</h5>
-              <p><small>{{ post.preview }} ...</small><br>&nbsp;</p>
-            {% endif %}
-          {% endfor %}
-        </div>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">&#x1F4C2; {{ page.title }}</h3>
+    <div class="row g-5 mb-4">
+      <div class="col-md-12">
+        {% for post in site.posts %}
+          {% if page.title == post.folder %}
+            <h5><a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</h5>
+            <p><small>{{ post.preview }} ...</small><br>&nbsp;</p>
+          {% endif %}
+        {% endfor %}
       </div>
+    </div>
   </div>
 </div>
