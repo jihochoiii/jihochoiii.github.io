@@ -28,7 +28,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 9999;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255,255,255,0.9);
 }
 header a {
   text-decoration: none;
@@ -37,13 +37,13 @@ header a:hover {
   color: $pointColor !important;
 }
 
-.content a {
+a {
   color: #000000;
   text-decoration: underline;
   text-decoration-color: $lighterGrey;
   text-underline-offset: 0.125rem;
 }
-.content a:hover {
+a:hover {
   color: $pointColor;
   text-decoration: none;
 }
@@ -83,6 +83,24 @@ h1, h2, h3, h4, h5, h6 {
   color: $pointColor;
 }
 
+.images {
+  margin-bottom: 1rem;
+}
+
+.button {
+  font-size: 0.75rem;
+  color: $pointColor;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid $pointColor;
+  border-radius: 3px;
+}
+.button:hover {
+  color: #ffffff;
+  background-color: $pointColor;
+}
+
 footer {
   height: 2.75rem;
   position: relative;
@@ -111,6 +129,9 @@ footer a:hover {
     width: 40%;
     margin-left: 2rem;
     margin-bottom: 1rem;
+  }
+  .images {
+    margin-bottom: 0;
   }
 }
 /* Large */
