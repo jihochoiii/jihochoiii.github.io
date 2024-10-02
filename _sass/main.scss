@@ -1,7 +1,8 @@
 $darkGrey: #404040;
 $lightGrey: #808080;
 $lighterGrey: #dddddd;
-$pointColor: #003876;
+$pointColor: #0368b4;
+$darkNavy: #003875;
 
 html, body {
   height: 100%;
@@ -34,18 +35,23 @@ header a {
   text-decoration: none;
 }
 header a:hover {
-  color: $pointColor !important;
+  color: $darkNavy !important;
+  text-decoration: none;
 }
 
 a {
-  color: #000000;
-  text-decoration: underline;
-  text-decoration-color: $lighterGrey;
-  text-underline-offset: 0.125rem;
-}
-a:hover {
   color: $pointColor;
   text-decoration: none;
+}
+a:hover {
+  color: $darkNavy;
+  text-decoration: underline;
+  text-decoration-color: $darkNavy;
+  text-underline-offset: 0.125rem;
+}
+
+p {
+  margin-bottom: 0.75rem;
 }
 
 .navbar-toggler {
@@ -80,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #1b100d;
 }
 .icons a:hover {
-  color: $pointColor;
+  color: $darkNavy;
 }
 
 .images {
@@ -112,7 +118,7 @@ footer a:hover {
     width: 96%;
   }
   .profile {
-    width: 39%;
+    width: 31%;
     margin-left: 1.25rem;
     margin-bottom: 1rem;
   }
@@ -121,8 +127,8 @@ footer a:hover {
   }
 }
 /* Large */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
   body .width {
-    max-width: 864px;
+    max-width: 960px;
   }
 }
