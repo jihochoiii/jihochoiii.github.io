@@ -1,6 +1,4 @@
 - name: home
   link: /
-- name: publications
-  link: /publications
 - name: projects
   link: /projects
