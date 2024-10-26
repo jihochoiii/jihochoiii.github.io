@@ -1,7 +1,8 @@
 $darkGrey: #404040;
 $lightGrey: #808080;
 $lighterGrey: #dddddd;
-$pointColor: #a75e72;
+$pointColor: #0368b4;
+$darkNavy: #003875;
 
 html, body {
   height: 100%;
@@ -34,18 +35,23 @@ header a {
   text-decoration: none;
 }
 header a:hover {
-  color: $pointColor !important;
+  color: $darkNavy !important;
+  text-decoration: none;
 }
 
 a {
-  color: #000000;
-  text-decoration: underline;
-  text-decoration-color: $lighterGrey;
-  text-underline-offset: 0.125rem;
-}
-a:hover {
   color: $pointColor;
   text-decoration: none;
+}
+a:hover {
+  color: $darkNavy;
+  text-decoration: underline;
+  text-decoration-color: $darkNavy;
+  text-underline-offset: 0.125rem;
+}
+
+p {
+  margin-bottom: 0.75rem;
 }
 
 .navbar-toggler {
@@ -59,7 +65,7 @@ a:hover {
 }
 
 :focus-visible {
-  outline: #005fcc auto 2px !important;
+  outline: #0b57d0 auto 2px !important;
   border-radius: 1px !important;
   box-shadow: none !important;
 }
@@ -80,25 +86,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #1b100d;
 }
 .icons a:hover {
-  color: $pointColor;
+  color: $darkNavy;
 }
 
 .images {
   margin-bottom: 1rem;
-}
-
-.button {
-  font-size: 0.75rem;
-  color: $pointColor;
-  text-decoration: none;
-  background-color: #ffffff;
-  padding: 0.25rem 0.5rem;
-  border: 1px solid $pointColor;
-  border-radius: 3px;
-}
-.button:hover {
-  color: #ffffff;
-  background-color: $pointColor;
 }
 
 footer {
@@ -126,8 +118,8 @@ footer a:hover {
     width: 96%;
   }
   .profile {
-    width: 40%;
-    margin-left: 2rem;
+    width: 31.5%;
+    margin-left: 1.25rem;
     margin-bottom: 1rem;
   }
   .images {
@@ -135,8 +127,8 @@ footer a:hover {
   }
 }
 /* Large */
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1000px) {
   body .width {
-    max-width: 912px;
+    max-width: 960px;
   }
 }
