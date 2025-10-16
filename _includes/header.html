@@ -1,0 +1,19 @@
+<header class="border-bottom">
+  <nav class="navbar navbar-expand-sm navbar-fixed-top width mx-auto px-4">
+    <button class="navbar-toggler custom-toggler ms-auto px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Navigation Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end text-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+	    {% for item in site.data.navigation %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ item.link }}" {% if page.url == item.link %}style="color: #003875; font-weight: 400;"{% endif %} style="color: #404040;">{{ item.name }}</a>
+          </li>
+        {% endfor %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.github.url }}/assets/pdf/cv-jiho-choi.pdf" target="_blank" style="color: #404040;">cv</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
